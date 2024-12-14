@@ -26,6 +26,8 @@ public class Program
         string? message = Console.ReadLine();
         await publisher.Publish("test/topic", message);
 
+        await Task.Delay(500);
+
         await broker.Stop();
 
     }
