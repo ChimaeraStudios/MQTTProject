@@ -5,7 +5,7 @@ using System.Text;
 
 
 
-namespace MQTTBasics
+namespace MQTTBasicWrapper
 {
     internal class Broker
     {

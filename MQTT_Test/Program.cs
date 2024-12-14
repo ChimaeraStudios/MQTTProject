@@ -1,4 +1,4 @@
-﻿using MQTTBasics;
+﻿using MQTTBasicWrapper;
 using System.Threading;
 
 public class Program
@@ -19,6 +19,7 @@ public class Program
 
         await subscriber.Subscribe("test/topic");
 
+        // Imposta il subrscriber per ricevere un messaggio
         subscriber.ReceiveMessage();
 
         Console.WriteLine("Enter message to publish:");
